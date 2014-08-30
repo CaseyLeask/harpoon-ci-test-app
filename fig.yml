@@ -1,0 +1,11 @@
+app:
+  build: .
+  links:
+    - db
+  environment:
+    PGHOST: db_1
+    PGUSER: postgres
+  privileged: true
+db:
+  image: postgres
+  privileged: true

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -x
+
+source /app/script/prepare
+
+echo "--- Running tests 1"
+
+echo "Tests passed."

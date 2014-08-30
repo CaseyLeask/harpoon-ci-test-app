@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -x
+
+echo '--- Waiting for Postgresql to become available'
+
+NEXT_WAIT_TIME=0
+until psql -l > /dev/null 2>&1 || [ $NEXT_WAIT_TIME -eq 4 ]; do
+  sleep $(( NEXT_WAIT_TIME++ ))
+done
+
+echo "--- Creating test DB"
+
+createdb test_app

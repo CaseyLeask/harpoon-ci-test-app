@@ -1,7 +1,5 @@
-# Fig CI example
+# Example app for [https://github.com/toolmantim/fig-buildbox-agent](fig-buildbox-agent)
 
-An example application for [https://github.com/toolmantim/fig-buildbox-agent](fig-buildbox-agents).
-
-This uses the standard [fig.yml](fig.yml) file, which you can you use for development, to use in the your Buildbox pipelines for CI, CD or otherwise.
+This uses the standard [fig.yml](fig.yml) to set up an environment for your Buildbox pipelines.
 
 See [http://www.fig.sh/](http://www.fig.sh/) for more details.

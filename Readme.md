@@ -35,10 +35,9 @@ See [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent) for h
 ![image](https://cloud.githubusercontent.com/assets/153/4101094/a0b6faee-30d0-11e4-922d-0eca094b9488.png)
 
 * Set your project's build agent query rules to only use `fig=true` build agents.
-* Create the project
-* Start two or more fig-buildbox-agent instances
-* Trigger a build
-
-The agents will detect the build jobs and execute their respective test script in parallel using completely isolated Docker environments.
+* Create the project.
+* Start two or more fig-buildbox-agent instances.
+* Trigger a build.
+* Bask in the glory of parallel, isolated builds thanks to Docker, Fig and Buildbox:
 
 ![image](https://cloud.githubusercontent.com/assets/153/4101107/b8f9bee2-30d1-11e4-97f6-4468622c080d.png)

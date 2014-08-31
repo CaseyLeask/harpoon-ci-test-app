@@ -29,9 +29,13 @@ See [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent) for h
 ## Using
 
 * Create a new project in your Buildbox account:
-  ![image](https://cloud.githubusercontent.com/assets/153/4101095/b15fee78-30d0-11e4-8a1a-254b086664c5.png)
+
+![image](https://cloud.githubusercontent.com/assets/153/4101095/b15fee78-30d0-11e4-8a1a-254b086664c5.png)
+
 * Configure the build pipeline to have two parallel steps for `scripts/tests_1` and `scripts/tests_2`:
-  ![image](https://cloud.githubusercontent.com/assets/153/4101094/a0b6faee-30d0-11e4-922d-0eca094b9488.png)
+
+![image](https://cloud.githubusercontent.com/assets/153/4101094/a0b6faee-30d0-11e4-922d-0eca094b9488.png)
+
 * Set your project's build agent query rules to only use `fig=true` build agents.
 * Create the project
 * Start two or more fig-buildbox-agent instances

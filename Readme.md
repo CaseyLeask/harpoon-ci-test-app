@@ -1,6 +1,8 @@
 # fig-ci-test-app
 
-This example app shows you how to add a `fig.yml` file to your project so you can test it in your build/CI pipeline using [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent). The [fig.yml](fig.yml) defines the entire environment for your app:
+This example app shows you how to add a `fig.yml` file to your project so you can test it in your build/CI pipeline using [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent).
+
+The [fig.yml](fig.yml) defines the entire environment for your app. For this app it's:
 
 ```yml
 app:
@@ -38,4 +40,4 @@ See [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent) for h
 * Trigger a build.
 * Bask in the glory of parallel, isolated, Docker-enabled builds:
 
-![image](https://cloud.githubusercontent.com/assets/153/4101107/b8f9bee2-30d1-11e4-97f6-4468622c080d.png)
+![image](https://cloud.githubusercontent.com/assets/153/4101405/5cc2f4ce-30e8-11e4-9ebd-d27898c1fdcf.gif)

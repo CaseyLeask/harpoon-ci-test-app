@@ -30,7 +30,7 @@ See [fig-buildbox-agent](https://github.com/toolmantim/fig-buildbox-agent) for h
 
 * Add this repository as a new project in your Buildbox account
 
-* Configure the build pipeline to have two parallel steps for `scripts/tests_1` and `scripts/tests_2`:
+* Configure the build pipeline to have two parallel steps for `script/tests_1` and `script/tests_2`:
 
 ![image](https://cloud.githubusercontent.com/assets/153/4101094/a0b6faee-30d0-11e4-922d-0eca094b9488.png)
 

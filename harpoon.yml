@@ -1,0 +1,37 @@
+---
+
+harpoon_version: "0.3.25.2"
+
+image_name_prefix: "harpoon-ci-test-app"
+
+respect_gitignore: true
+
+images:
+  app:
+    commands:
+      - FROM ubuntu
+      - RUN apt-get update -qq
+      - RUN apt-get install -y postgresql-client
+      - ADD . /app
+      - WORKDIR /app
+    link:
+      - "{images.db.container_name}:db"
+    env:
+      PGHOST=db
+      PGUSER=postgres
+    tasks:
+      tests_1:
+        description: "Run the unit tests"
+        options:
+          bash: "./script/tests_1"
+      tests_2:
+        description: "Run the unit tests"
+        options:
+          bash: "./script/tests_2"
+
+
+  db:
+    commands:
+      - FROM postgres
+      - EXPOSE 3306
+

@@ -1,9 +1,0 @@
-app:
-  build: .
-  links:
-    - db:db
-  environment:
-    PGHOST: db
-    PGUSER: postgres
-db:
-  image: postgres
